@@ -1,0 +1,42 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "project_manager",
+  "keybinds": {
+    "f9": "agent:prev",
+    "f10": "agent:next"
+  },
+  "agent": {
+    "project_manager": {
+      "description": "Project Manager - coordinates sprints, presents increments, gathers feedback",
+      "mode": "primary",
+      "prompt": "{file:~/.config/opencode/agent/project_manager.md}"
+    },
+    "sam": {
+      "description": "Researcher + Planner - deep analysis, actionable plans",
+      "mode": "subagent",
+      "prompt": "{file:~/.config/opencode/agent/sam.md}"
+    },
+    "ilias": {
+      "description": "Implementor - writes code, runs tests, git operations",
+      "mode": "subagent",
+      "prompt": "{file:~/.config/opencode/agent/ilias.md}"
+    },
+    "jordan": {
+      "description": "Truth-Teller (default) - challenges assumptions",
+      "mode": "subagent",
+      "prompt": "{file:~/.config/opencode/agent/jordan.md}"
+    },
+    "jordan_qwen": {
+      "description": "Jordan (Qwen) - Truth-teller using Qwen3 Coder",
+      "mode": "subagent",
+      "prompt": "{file:~/.config/opencode/agent/jordan.md}"
+    },
+    "jordan_grok": {
+      "description": "Jordan (Grok) - Truth-teller using Grok",
+      "mode": "subagent",
+      "prompt": "{file:~/.config/opencode/agent/jordan.md}"
+    },
+    "plan": { "disable": true },
+    "build": { "disable": true }
+  }
+}
