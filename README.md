@@ -1,4 +1,4 @@
-# opencode-agents-pm
+# opencode-project-management
 
 Multi-agent AI development template with **Project Manager** workflow for [opencode](https://github.com/sst/opencode).
 
